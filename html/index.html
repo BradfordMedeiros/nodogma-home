@@ -1,0 +1,61 @@
+<html>
+  <body>
+    <div class="mainbody">
+      <div class="titlebar">
+        <div class="title">no-dogma</div>
+      </div>
+      <div class="appbody">
+        <div class="apptitle">Useful Content</div>
+        <div>
+	  <div onclick="redirectHippo()" class="app">
+             Hippo Content Server
+             <div class="app_subtitle">server up content used by hippo clients</div>
+          </div>
+	  <div onclick="redirectMonitoring()" class="app">
+            Prometheus Monitoring
+             <div class="app_subtitle">monitors other app metrics</div>
+          </div>
+	</div>
+      </div>
+    </div>
+  </body>
+
+  <style> 
+    body {
+      background: rgb(30,30,30);
+      padding: 0;
+      margin: 0;
+      color: whitesmoke;
+    }
+    .titlebar {
+      padding: 24px;
+      background: rgb(30,30,30);
+      color: whitesmoke;
+      font-family: courier;
+      box-shadow: 0px 0px 10px 1px black;
+    }
+    .apptitle { 
+      font-size: 24px;
+      color: white;
+      margin-bottom: 18px;
+      box-shadow: 0px 0px 4px 1px #000000d9;
+      padding: 18px;
+      background: #131313;
+    }
+    .appbody {
+      padding: 32px;
+    }
+    .app {
+      padding: 18px;
+    }
+    .app:hover {
+      color: steelblue;
+      cursor: pointer;
+      background: rgb(20,20,20);
+    }
+    .app_subtitle {
+      color: grey;
+    }
+  </style>
+  <script src="redirects.js"></script>
+</html>
